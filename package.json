@@ -1,16 +1,14 @@
 {
   "name": "tsai",
-  "jest": {
-    "verbose": true
-  },
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open ",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit",
-    "preinstall": "npm i --save-dev ts-node && npm i --save-dev jest && npm i --save-dev jest-junit"
+    "test": "npx jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit",
+    "preinstall": "npm intall ts-node --save-dev && npm intall jest && --save-dev npm intall jest-junit--save-dev ",
+    "jest": "jest"
   },
   "jest-junit": {
     "outputDirectory": "test_reports",

@@ -15,18 +15,20 @@ jobs:
           command: npm install
       - run:
           name: Run tests with JUnit as reporter
-          command: jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit
+          command: npm run test
       - store_test_results:
           path: ./test_reports/
+      - store_artifacts:
+          path: ./coverage/
       - run:
           name: Build project for prod
           command: npm run build
+      - store_artifacts:
+          path: ./dist/
       - setup_remote_docker
       - run:
           name: Check docker version
           command: docker -v
-      - store_artifacts:
-          path: ./dist/
       - run:
           name: Build docker image
           command: docker build -t nnenkov/tsai-app .
