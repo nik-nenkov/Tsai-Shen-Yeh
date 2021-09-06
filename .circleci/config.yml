@@ -25,4 +25,4 @@ jobs:
           path: ./dist/
       - run:
           name: Install Docker
-          command: apk add docker && apk update && service docker start
+          command: apk add docker && apk update && rc-update add docker boot && service docker start
