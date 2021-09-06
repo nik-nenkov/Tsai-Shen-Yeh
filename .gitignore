@@ -48,3 +48,4 @@ Thumbs.db
 /node_modules/
 /coverage/
 /dist/
+/test_reports/
