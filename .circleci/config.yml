@@ -13,23 +13,23 @@ jobs:
       - run:
           name: Install packages
           command: npm install
-#      - run:
-#          name: Run tests with JUnit as reporter
-#          command: jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit
-#      - store_test_results:
-#          path: ./test_reports/
+      - run:
+          name: Run tests with JUnit as reporter
+          command: jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit
+      - store_test_results:
+          path: ./test_reports/
       - run:
           name: Build project for prod
           command: npm run build
-#      - store_artifacts:
-#          path: ./dist/
-#      - run:
-#          name: Build docker image
-#          command: docker build -t nnenkov/tsai-app .
-#      - run:
-#          name: Push docker image to artifactory
-#          command: docker push nnenkov/tsai-app
       - setup_remote_docker
       - run:
           name: Check docker version
           command: docker -v
+      - store_artifacts:
+          path: ./dist/
+      - run:
+          name: Build docker image
+          command: docker build -t nnenkov/tsai-app .
+      - run:
+          name: Push docker image to artifactory
+          command: docker push nnenkov/tsai-app
