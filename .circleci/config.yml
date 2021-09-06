@@ -12,7 +12,7 @@ jobs:
       - checkout
       - run:
           name: Install packages
-          command: npm install && npm install -g jest && npm install -g ts-node && npm install -g jest-junit
+          command: npm install
       - run:
           name: Run tests with JUnit as reporter
           command: jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit
