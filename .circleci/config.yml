@@ -25,4 +25,4 @@ jobs:
           path: ./dist/
       - run:
           name: Install Docker
-          command: yum update -y && yum install docker-engine -y && service docker start
+          command: apk add docker && apk update && service docker start
