@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Constants } from '../../../../util/constants';
+import { Constants } from '../../../util/constants';
 
 @Component({
   selector: 'tsai-footer',

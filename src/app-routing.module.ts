@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HelpComponent } from './layers/component/shared/help/help.component';
+import { HelpComponent } from './app/shared/help/help.component';
+import { HomeViewComponent } from './app/view/home-view/home-view.component';
 
 const routes: Routes = [
   {
@@ -9,7 +10,8 @@ const routes: Routes = [
     component: HelpComponent
   },
   {
-
+    path: '',
+    component: HomeViewComponent
   }
 ];
 
