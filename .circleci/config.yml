@@ -14,17 +14,17 @@ jobs:
       - run:
           name: Check docker version
           command: docker -v
-#      - run:
-#          name: Install packages
-#          command: npm install
+      - run:
+          name: Install packages
+          command: npm install
 #      - run:
 #          name: Run tests with JUnit as reporter
 #          command: jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit
 #      - store_test_results:
 #          path: ./test_reports/
-#      - run:
-#          name: Build project for prod
-#          command: npm run build
+      - run:
+          name: Build project for prod
+          command: npm run build
 #      - store_artifacts:
 #          path: ./dist/
 #      - run:
