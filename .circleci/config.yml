@@ -9,11 +9,7 @@ jobs:
           username: nnenkov
           password: $DOCKERHUB_PASSWORD
     steps:
-      - setup_remote_docker
       - checkout
-      - run:
-          name: Check docker version
-          command: docker -v
       - run:
           name: Install packages
           command: npm install
@@ -33,3 +29,7 @@ jobs:
 #      - run:
 #          name: Push docker image to artifactory
 #          command: docker push nnenkov/tsai-app
+      - setup_remote_docker
+      - run:
+          name: Check docker version
+          command: docker -v
