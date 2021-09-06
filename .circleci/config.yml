@@ -9,26 +9,29 @@ jobs:
           username: nnenkov
           password: $DOCKERHUB_PASSWORD
     steps:
-      - checkout
-      - run:
-          name: Install packages
-          command: npm install
-      - run:
-          name: Run tests with JUnit as reporter
-          command: npm run test
-      - store_test_results:
-          path: ./test_reports/
-      - store_artifacts:
-          path: ./coverage/
-      - run:
-          name: Build project for prod
-          command: npm run build
-      - store_artifacts:
-          path: ./dist/
+#      - checkout
+#      - run:
+#          name: Install packages
+#          command: npm install
+#      - run:
+#          name: Run tests with JUnit as reporter
+#          command: npm run test
+#      - store_test_results:
+#          path: ./test_reports/
+#      - store_artifacts:
+#          path: ./coverage/
+#      - run:
+#          name: Build project for prod
+#          command: npm run build
+#      - store_artifacts:
+#          path: ./dist/
       - setup_remote_docker
       - run:
           name: Check docker version
           command: docker -v
+      - run:
+          name: Docker Hub Login
+          command: docker login -u nnenkov -p $DOCKERHUB_PASSWORD
       - run:
           name: Build docker image
           command: docker build -t nnenkov/tsai-app .
