@@ -18,4 +18,8 @@ jobs:
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:
           path: ./reports/junit/
-      
+      - run:
+          name: Build project for prod
+          command: npm run build
+      - store_artifacts:
+          path: ./.dist/
