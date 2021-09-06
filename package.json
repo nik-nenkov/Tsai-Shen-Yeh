@@ -10,7 +10,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit",
-    "preinstall": "npm i -g ts-node && npm i -g jest && npm i -g jest-junit"
+    "preinstall": "npm i --save-dev ts-node && npm i --save-dev jest && npm i --save-dev jest-junit"
   },
   "jest-junit": {
     "outputDirectory": "test_reports",
@@ -27,12 +27,8 @@
     "@angular/platform-browser-dynamic": "latest",
     "@angular/router": "latest",
     "@types/uuid": "latest",
-    "jest": "latest",
-    "jest-junit": "latest",
     "rxjs": "latest",
-    "ts-node": "latest",
     "tslib": "latest",
-    "uuid": "latest",
     "zone.js": "latest"
   },
   "devDependencies": {

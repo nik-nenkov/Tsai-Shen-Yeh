@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="20" failures="0" errors="0" time="4.896">
-  <testsuite name="AppComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:54" time="1.166" tests="3">
-    <testcase classname="AppComponent should create the app" name="AppComponent should create the app" time="0.069">
+<testsuites name="jest tests" tests="20" failures="0" errors="0" time="5.277">
+  <testsuite name="AppComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:13" time="1.411" tests="3">
+    <testcase classname="AppComponent should create the app" name="AppComponent should create the app" time="0.082">
     </testcase>
-    <testcase classname="AppComponent should have as title &apos;tsai&apos;" name="AppComponent should have as title &apos;tsai&apos;" time="0.023">
+    <testcase classname="AppComponent should have as title &apos;tsai&apos;" name="AppComponent should have as title &apos;tsai&apos;" time="0.065">
     </testcase>
-    <testcase classname="AppComponent should render title" name="AppComponent should render title" time="0.019">
-    </testcase>
-  </testsuite>
-  <testsuite name="FooterComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:55" time="0.152" tests="1">
-    <testcase classname="FooterComponent should create" name="FooterComponent should create" time="0.016">
+    <testcase classname="AppComponent should render title" name="AppComponent should render title" time="0.04">
     </testcase>
   </testsuite>
-  <testsuite name="HelpComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:55" time="0.131" tests="1">
+  <testsuite name="EventDetailsComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:15" time="0.146" tests="1">
+    <testcase classname="EventDetailsComponent should create" name="EventDetailsComponent should create" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="HomeViewComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:15" time="0.153" tests="1">
+    <testcase classname="HomeViewComponent should create" name="HomeViewComponent should create" time="0.031">
+    </testcase>
+  </testsuite>
+  <testsuite name="ProductFormComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:15" time="0.135" tests="1">
+    <testcase classname="ProductFormComponent should create" name="ProductFormComponent should create" time="0.013">
+    </testcase>
+  </testsuite>
+  <testsuite name="HelpComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:15" time="0.131" tests="1">
     <testcase classname="HelpComponent should create" name="HelpComponent should create" time="0.013">
     </testcase>
   </testsuite>
-  <testsuite name="HomeViewComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:55" time="0.154" tests="1">
-    <testcase classname="HomeViewComponent should create" name="HomeViewComponent should create" time="0.028">
+  <testsuite name="ContactFormComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:15" time="0.139" tests="1">
+    <testcase classname="ContactFormComponent should create" name="ContactFormComponent should create" time="0.013">
     </testcase>
   </testsuite>
-  <testsuite name="NavbarComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:56" time="0.191" tests="1">
+  <testsuite name="SidebarComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:16" time="0.128" tests="1">
+    <testcase classname="SidebarComponent should create" name="SidebarComponent should create" time="0.013">
+    </testcase>
+  </testsuite>
+  <testsuite name="NavbarComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:16" time="0.134" tests="1">
     <testcase classname="NavbarComponent should create" name="NavbarComponent should create" time="0.02">
     </testcase>
   </testsuite>
-  <testsuite name="EventFormComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:56" time="0.134" tests="1">
-    <testcase classname="EventFormComponent should create" name="EventFormComponent should create" time="0.013">
+  <testsuite name="FooterComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:16" time="0.132" tests="1">
+    <testcase classname="FooterComponent should create" name="FooterComponent should create" time="0.02">
     </testcase>
   </testsuite>
-  <testsuite name="TabComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:56" time="0.134" tests="1">
+  <testsuite name="NewsService" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:16" time="0.122" tests="1">
+    <testcase classname="NewsService should be created" name="NewsService should be created" time="0.009">
+    </testcase>
+  </testsuite>
+  <testsuite name="EventFormComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:16" time="0.125" tests="1">
+    <testcase classname="EventFormComponent should create" name="EventFormComponent should create" time="0.015">
+    </testcase>
+  </testsuite>
+  <testsuite name="TabComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:16" time="0.129" tests="1">
     <testcase classname="TabComponent should create" name="TabComponent should create" time="0.014">
     </testcase>
   </testsuite>
-  <testsuite name="EventDetailsComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:56" time="0.139" tests="1">
-    <testcase classname="EventDetailsComponent should create" name="EventDetailsComponent should create" time="0.018">
+  <testsuite name="SpinnerComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:16" time="0.33" tests="1">
+    <testcase classname="SpinnerComponent should create" name="SpinnerComponent should create" time="0.023">
     </testcase>
   </testsuite>
-  <testsuite name="SpinnerComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:56" time="0.134" tests="1">
-    <testcase classname="SpinnerComponent should create" name="SpinnerComponent should create" time="0.02">
+  <testsuite name="CardComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:17" time="0.135" tests="1">
+    <testcase classname="CardComponent should create" name="CardComponent should create" time="0.012">
     </testcase>
   </testsuite>
-  <testsuite name="StockMarketService" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:56" time="0.121" tests="1">
-    <testcase classname="StockMarketService should be created" name="StockMarketService should be created" time="0.009">
-    </testcase>
-  </testsuite>
-  <testsuite name="CardComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:57" time="0.122" tests="1">
-    <testcase classname="CardComponent should create" name="CardComponent should create" time="0.013">
-    </testcase>
-  </testsuite>
-  <testsuite name="SidebarComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:57" time="0.149" tests="1">
-    <testcase classname="SidebarComponent should create" name="SidebarComponent should create" time="0.014">
-    </testcase>
-  </testsuite>
-  <testsuite name="WeatherService" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:57" time="0.122" tests="1">
-    <testcase classname="WeatherService should be created" name="WeatherService should be created" time="0.008">
-    </testcase>
-  </testsuite>
-  <testsuite name="SportService" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:57" time="0.12" tests="1">
-    <testcase classname="SportService should be created" name="SportService should be created" time="0.013">
-    </testcase>
-  </testsuite>
-  <testsuite name="ContactFormComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:57" time="0.127" tests="1">
-    <testcase classname="ContactFormComponent should create" name="ContactFormComponent should create" time="0.018">
-    </testcase>
-  </testsuite>
-  <testsuite name="NoInfoComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:57" time="0.119" tests="1">
+  <testsuite name="NoInfoComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:17" time="0.125" tests="1">
     <testcase classname="NoInfoComponent should create" name="NoInfoComponent should create" time="0.013">
     </testcase>
   </testsuite>
-  <testsuite name="ProductFormComponent" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:57" time="0.339" tests="1">
-    <testcase classname="ProductFormComponent should create" name="ProductFormComponent should create" time="0.025">
+  <testsuite name="StockMarketService" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:17" time="0.116" tests="1">
+    <testcase classname="StockMarketService should be created" name="StockMarketService should be created" time="0.013">
     </testcase>
   </testsuite>
-  <testsuite name="NewsService" errors="0" failures="0" skipped="0" timestamp="2021-09-06T11:15:58" time="0.137" tests="1">
-    <testcase classname="NewsService should be created" name="NewsService should be created" time="0.009">
+  <testsuite name="WeatherService" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:17" time="0.12" tests="1">
+    <testcase classname="WeatherService should be created" name="WeatherService should be created" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="SportService" errors="0" failures="0" skipped="0" timestamp="2021-09-06T13:06:17" time="0.119" tests="1">
+    <testcase classname="SportService should be created" name="SportService should be created" time="0.009">
     </testcase>
   </testsuite>
 </testsuites>
