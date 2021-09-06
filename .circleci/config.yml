@@ -11,5 +11,5 @@ jobs:
       - run:
           name: "Run Jest and Collect Coverage Reports"
           command: npm install -g jest && npm install -g ts-node && jest --config jest.config.ts --collectCoverage=true --runInBand
-      - store_artifacts:
+      - store_test_results:
           path: coverage
