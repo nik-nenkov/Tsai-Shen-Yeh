@@ -7,9 +7,9 @@ jobs:
       - image: node:16-alpine
     steps:
       - checkout
-      - run: npm install -g
+      - run: npm install
       - run:
           name: "Run Jest and Collect Coverage Reports"
-          command: jest --config jest.config.ts --collectCoverage=true --runInBand
+          command: npm install -g jest && npm install -g jest && jest --config jest.config.ts --collectCoverage=true --runInBand
       - store_artifacts:
           path: coverage
