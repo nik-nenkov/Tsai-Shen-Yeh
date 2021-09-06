@@ -10,28 +10,25 @@ jobs:
           password: $DOCKERHUB_PASSWORD
     steps:
       - checkout
-#      - run:
-#          name: Install packages
-#          command: npm install
-#      - run:
-#          name: Run tests with JUnit as reporter
-#          command: jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit
-#      - store_test_results:
-#          path: ./test_reports/
-#      - run:
-#          name: Build project for prod
-#          command: npm run build
-#      - store_artifacts:
-#          path: ./dist/
       - run:
-          name: Install Docker
-          command: apk add docker && apk add openrc && apk update && rc-update add docker boot
+          name: Install packages
+          command: npm install
       - run:
-          name: echo status
-          command: service docker status
-#      - run:
-#          name: Build docker image
-#          command: docker build -t nnenkov/tsai-app .
-#      - run:
-#          name: Push docker image to artifactory
-#          command: docker push nnenkov/tsai-app
+          name: Run tests with JUnit as reporter
+          command: jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit
+      - store_test_results:
+          path: ./test_reports/
+      - run:
+          name: Build project for prod
+          command: npm run build
+      - store_artifacts:
+          path: ./dist/
+      - setup_remote_docker:
+          version: 19.03.13
+          docker_layer_caching: true
+      - run:
+          name: Build docker image
+          command: docker build -t nnenkov/tsai-app .
+      - run:
+          name: Push docker image to artifactory
+          command: docker push nnenkov/tsai-app
