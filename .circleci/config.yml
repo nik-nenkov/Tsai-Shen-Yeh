@@ -12,10 +12,7 @@ jobs:
       - checkout
       - run:
           name: Install packages
-          command: npm install
-#      - run:
-#          name: Install JEST, TS-node and JUnit coverage reporter
-#          command: npm install -g jest && npm install -g ts-node && npm install -g jest-junit
+          command: npm install && npm install -g jest && npm install -g ts-node && npm install -g jest-junit
       - run:
           name: Run tests with JUnit as reporter
           command: jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit
@@ -26,3 +23,6 @@ jobs:
           command: npm run build
       - store_artifacts:
           path: ./dist/
+      - run:
+          name: Install Docker
+          command: yum update -y && yum install docker-engine -y && service docker start
