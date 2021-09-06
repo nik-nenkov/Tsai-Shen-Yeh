@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Constants } from '../../../util/constants';
 
 @Component({
   selector: 'tsai-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tsai';
+  title = Constants.name;
 }
