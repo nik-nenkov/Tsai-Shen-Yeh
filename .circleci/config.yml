@@ -9,7 +9,13 @@ jobs:
       - checkout
       - run: npm install
       - run:
-          name: "Run Jest and Collect Coverage Reports"
-          command: npm install -g jest && npm install -g ts-node && jest --config jest.config.ts --collectCoverage=true --runInBand
+          name: Install JEST, TS-node and JUnit coverage reporter
+          command: npm install -g jest && npm install -g ts-node && npm install -g jest-junit
+      - run:
+          name: Run tests with JUnit as reporter
+          command: jest --config jest.config.ts --collectCoverage=true --runInBand --ci --reporters=default --reporters=jest-junit
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:
-          path: coverage
+          path: ./reports/junit/
+      
