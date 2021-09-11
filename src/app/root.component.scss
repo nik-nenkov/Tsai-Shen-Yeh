@@ -1,6 +1,8 @@
-.content{
-   display: flex;
-   flex-direction: column;
-   column-gap: 20px;
-   align-items: stretch;
+:host{
+   .content{
+      display: flex;
+      flex-direction: column;
+      column-gap: 20px;
+     align-items: stretch;
+   }
 }
